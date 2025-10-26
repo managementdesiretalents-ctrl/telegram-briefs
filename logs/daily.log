@@ -1,0 +1,73 @@
+/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Posted to Slack.
+/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Posted to Slack.
+Traceback (most recent call last):
+  File "/Users/hunternovotny/telegram-briefs/post_daily_summary_slack.py", line 102, in <module>
+    res = slack.conversations_list(limit=1000, cursor=cursor, types="public_channel,private_channel")
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/client.py", line 3327, in conversations_list
+    return self.api_call("conversations.list", http_verb="GET", params=kwargs)
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 169, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 200, in _sync_send
+    return self._urllib_api_call(
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 323, in _urllib_api_call
+    return SlackResponse(
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/slack_response.py", line 197, in validate
+    raise e.SlackApiError(message=msg, response=self)
+slack_sdk.errors.SlackApiError: The request to the Slack API failed. (url: https://slack.com/api/conversations.list)
+The server responded with: {'ok': False, 'error': 'missing_scope', 'needed': 'channels:read,groups:read,mpim:read,im:read', 'provided': 'incoming-webhook'}
+Posted to Slack. Channel=C09JTNPRYLA ts=1760432406.429179
+Posted to Slack. Channel=C09JTNPRYLA ts=1760518804.912379
+Posted to Slack. Channel=C09JTNPRYLA ts=1760605207.113349
+Posted to Slack. Channel=C09JTNPRYLA ts=1760691607.575539
+Posted to Slack. Channel=C09JTNPRYLA ts=1760778007.464949
+Posted to Slack. Channel=C09JTNPRYLA ts=1760864407.178899
+Traceback (most recent call last):
+  File "/Users/hunternovotny/telegram-briefs/post_daily_summary_slack.py", line 114, in <module>
+    slack.conversations_join(channel=chan_id)
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/client.py", line 3275, in conversations_join
+    return self.api_call("conversations.join", params=kwargs)
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 169, in api_call
+    return self._sync_send(api_url=api_url, req_args=req_args)
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 200, in _sync_send
+    return self._urllib_api_call(
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 307, in _urllib_api_call
+    response = self._perform_urllib_http_request(url=url, args=request_args)  # type: ignore[arg-type]
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 511, in _perform_urllib_http_request
+    raise err
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 410, in _perform_urllib_http_request
+    resp = self._perform_urllib_http_request_internal(url, req)
+  File "/Users/hunternovotny/telegram-briefs/.venv/lib/python3.9/site-packages/slack_sdk/web/base_client.py", line 540, in _perform_urllib_http_request_internal
+    resp = urlopen(req, context=self.ssl, timeout=self.timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+Posted to Slack. Channel=C09JTNPRYLA ts=1761037587.586379
+Posted to Slack. Channel=C09JTNPRYLA ts=1761123606.641609
+Posted to Slack. Channel=C09JTNPRYLA ts=1761210087.785979
+Posted to Slack. Channel=C09JTNPRYLA ts=1761382806.966879

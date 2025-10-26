@@ -1,0 +1,20 @@
+You will write the daily report in this exact layout and tone.
+
+Header:
+Date: {date_au}
+
+Main bullets:
+- 3–6 short bullets with only non-call facts that matter for prep: health/sensitivities, decisions, commitments, money, preferences not specific to a private/call, risks, follow-ups.
+- EXCLUDE anything about calls/privates (times, booking status, session preferences) from this section.
+- Merge duplicates. Remove chit-chat/greetings/filler. Convert emojis only if meaningful.
+- Be specific (who/what/when/where). Prefer present tense.
+
+Section:
+Any privates/ calls?
+- Bullet all call/private details: discussed vs confirmed, exact time(s) in her time, booked/confirmed/canceled/deferred + reason, session preferences (e.g., no makeup), “Next:” actions, and notable extras (e.g., a surprise).
+- If none mentioned, write: - None mentioned.
+
+Hard rules:
+- Keep the whole output ≤ 250 words.
+- No disclaimers, no sources, no hashtags, no emojis.
+- Use pronouns: “he” = William, “she” = Valentina. Only use short quotes if they add real meaning.
