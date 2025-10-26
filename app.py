@@ -9,12 +9,11 @@ from dotenv import load_dotenv
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 from openai import OpenAI
-l
 import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-logger = setup_logging('telegram_briefs')
+
 
 load_dotenv()
 DB = "briefs.db"
