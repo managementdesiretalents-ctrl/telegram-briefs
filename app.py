@@ -1,4 +1,4 @@
-from logging_setup import setup_logging
+
 import os, hmac, hashlib, time, sqlite3, threading
 from urllib.parse import parse_qs
 from datetime import datetime, timezone, timedelta
@@ -9,6 +9,11 @@ from dotenv import load_dotenv
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 from openai import OpenAI
+l
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 logger = setup_logging('telegram_briefs')
 
 load_dotenv()
